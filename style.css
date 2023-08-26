@@ -1,0 +1,289 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#header{
+    height: 40px;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgb(188, 188, 188);
+}
+#header nav ul{
+   display: flex;
+   list-style: none;
+}
+#header nav ul li a{ 
+    color: black;
+    margin-left: 50px;
+    text-decoration: none;
+    position: relative;
+ }
+ #header nav ul li a:last-child{ 
+    margin-right: 50px;
+ }
+
+ #header nav ul li a:hover::before{ 
+   content: '';
+   position: absolute;
+   top: 40px;
+   border-radius: 10px;
+   left: -15px;
+   height: 2px;
+   width: 180%;
+   background-color: orange;
+ }
+
+
+.d{
+    color: orange;
+    font-size: larger;
+    font-weight: bolder;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sorce{
+    margin-top: 10vh;
+    height: 180px;
+    width: 500px;
+    background-color: rgba(36, 36, 190, 0.907);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.text{
+    color: white;
+    margin-bottom: 20px;
+    font-size: large;
+}
+.title{
+    color: rgb(47, 47, 47);
+    font-weight:400;
+    font-size: 2rem;
+}
+.sub-title{
+    color: rgb(47, 47, 47);
+    font-size: 2.5rem;
+    font-weight:400;
+    margin-bottom: 10px;
+}
+
+.btn-curriculo{
+    width: 280px;
+    height: 40px;
+    background-color: rgb(255, 140, 0);
+    border: 0px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size:large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-curriculo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.btn-curriculo:hover{
+   background-color: rgb(228, 126, 0);
+}
+
+.about{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+.curses{
+    margin-top: 20vh;
+    height: 50vh;
+    margin-bottom: 15vh;
+}
+
+.curses div{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+}
+
+.curses div img{
+     height: 100px;
+     width: 100px;  
+}
+.curses div img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+   
+}
+.text-p{
+    font-size:medium;
+    color: rgb(57, 57, 57);
+}
+
+.container-text{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-text img{
+   margin-left: 50px;
+   margin-right: 70px;
+   height: 60vh;
+   width: 40vw;
+   border-radius: 10px;
+}
+.sobre-categorias{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+.info{
+    font-size: 4.0rem;
+    color: rgb(64, 64, 235);
+    font-weight: bolder;
+}
+.sub-categorias{
+    font-size: 1.2rem;
+    color: rgb(50, 50, 50);
+}
+.parametros{
+    display: flex;
+}
+.parametro{
+    display: flex;
+    flex-direction: column;
+    font-size:medium;
+    color: #5b5b5b;
+    align-items: center;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(210, 206, 206);
+    width: 150px;
+    height: 180px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -6px 10px 6px rgba(0, 0, 0, 0.1); 
+}
+.curriculos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+}
+
+.curriculo {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(210, 206, 206);
+    width: 35vw;
+    height: 50vh;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -6px 10px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.curriculo h2{
+    color: blue;
+    font-size: large;
+}
+.curriculo span{
+    color: rgb(73, 73, 73);
+    font-size: 0.9rem;
+}
+.circulo{
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    background-color: rgb(203, 203, 203);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.btn-cv{
+    margin-top: 50px;
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 0px solid black;
+    cursor: pointer;
+}
+.btn-cv a{
+    color: white;
+    text-decoration: none;
+}
+.btn-cv:hover{
+    transition: 0.5s ease-out;
+    background-color: rgb(1, 1, 141);
+}
+@media (max-width: 800px) {
+#header{
+        width: 90vw;
+}
+#header nav{
+       display: none;
+}
+.sorce{
+    width: 300px;
+}
+.btn-curriculo{
+    width: 200px;
+}
+
+.title{
+    color: rgb(47, 47, 47);
+    font-weight:400;
+    font-size: 1rem;
+}
+.sub-title{
+    font-size: 1.5rem;
+}
+.text-p{
+    font-size: small;
+    padding: 10px;
+    width: 90vw;
+}
+.container-text{
+    flex-direction: column; 
+}
+.info{
+    font-size: 2.0rem; 
+}
+.sub-categorias{
+    font-size: 1rem;
+}
+.parametros{
+    display: flex;
+    flex-direction: column;
+}
+.curriculos {
+    display: flex;
+    flex-direction: column; 
+}
+.curriculo{
+   height: 70vh;
+   width: 80vw;
+}
+}
