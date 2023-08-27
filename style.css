@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'sans-serif';
 }
 html {
     scroll-behavior: smooth;
@@ -51,16 +54,23 @@ html {
     flex-direction: column;
     align-items: center;
 }
-.sorce{
-    margin-top: 10vh;
-    height: 180px;
-    width: 500px;
-    background-color: rgba(36, 36, 190, 0.907);
+.content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    font-size: 1em;
+    color: #002D6F;
+}
+.content-text{
+    width: 30vw;
+    padding: 10px;
+}
+.content span{
+   font-size: small;
+   margin-top: 10px;
+}
+.content img{
+  height: 300px;
 }
 .text{
     color: white;
@@ -73,28 +83,34 @@ html {
     font-size: 2rem;
 }
 .sub-title{
-    color: rgb(47, 47, 47);
-    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
     font-weight:400;
     margin-bottom: 10px;
 }
 
 .btn-curriculo{
-    width: 280px;
-    height: 40px;
-    background-color: rgb(255, 140, 0);
-    border: 0px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    font-size:large;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(0, 255, 255, 0);
+    border: 1.3px solid rgb(4, 205, 255);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     cursor: pointer;
 }
-.btn-curriculo a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
 .btn-curriculo:hover{
-   background-color: rgb(228, 126, 0);
+    transition: 0.3s;
+    background-color: rgb(4, 205, 255);;
+}
+
+.btn-curriculo:hover a{
+    transition: 0.3s;
+    color: rgb(255, 255, 255);;
+}
+.btn-curriculo a{
+    color: rgb(2, 192, 255);
+    text-decoration: none;
+    font-weight: 0;
 }
 
 .about{
@@ -130,8 +146,8 @@ html {
    
 }
 .text-p{
-    font-size:medium;
-    color: rgb(57, 57, 57);
+    font-size:0.9em;
+    color: rgb(95, 95, 95);
 }
 
 .container-text{
@@ -155,12 +171,12 @@ html {
     margin-bottom: 20vh;
 }
 .info{
-    font-size: 4.0rem;
-    color: rgb(64, 64, 235);
+    font-size: 3.0rem;
+    color: #002D6F;
     font-weight: bolder;
 }
 .sub-categorias{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgb(50, 50, 50);
 }
 .parametros{
@@ -181,8 +197,14 @@ html {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: -6px 10px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: -6px 10px 6px rgba(0, 0, 0, 0.1);
 }
+.parametro:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    border-top: 4px solid #002D6F;
+}
+
 .curriculos {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -200,14 +222,18 @@ html {
     border-radius: 10px;
     box-shadow: -6px 10px 6px rgba(0, 0, 0, 0.1); 
 }
+.curriculo:hover{
+    transform: translateY(-5px);
+    border-left: 5px solid #002D6F;
+}
 
 .curriculo h2{
-    color: blue;
-    font-size: large;
+    color: #002D6F;
+    font-size: 1.1em;
 }
 .curriculo span{
     color: rgb(73, 73, 73);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 .circulo{
     height: 90px;
@@ -224,7 +250,7 @@ html {
     margin-top: 50px;
     width: 100px;
     height: 30px;
-    background-color: blue;
+    background-color: rgb(228, 126, 0);;
     color: white;
     border-radius: 5px;
     border: 0px solid black;
@@ -235,8 +261,7 @@ html {
     text-decoration: none;
 }
 .btn-cv:hover{
-    transition: 0.5s ease-out;
-    background-color: rgb(1, 1, 141);
+    background-color: rgb(241, 149, 36);
 }
 @media (max-width: 800px) {
 #header{
